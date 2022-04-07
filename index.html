@@ -4,7 +4,6 @@
 #4: Inside form element - required to enter my name in a field with id="name".
 #5: Inside form element - required to enter an email in a field with id="email".
 #6: If I enter an email that is not formatted correctly, I will see an HTML5 validation error.
-
 #7: Inside the form, I can enter a number in a field with id="number".
 #8: If I enter non-numbers in the number input, I will see an HTML5 validation error.
 #9: If I enter numbers outside the range of the number input, which are defined by the min and max attributes, I will see an HTML5 validation error.
@@ -12,55 +11,98 @@
 #11: For the name, email, and number input fields - placeholder text that gives me a description or instructions for each field.
 #12: Inside the form element, I can select an option from a dropdown that has a corresponding id="dropdown".
 #13: Inside the form element, I can select a field from one or more groups of radio buttons. Each group should be grouped using the name attribute.
+
 #14: Inside the form element, I can select several fields from a series of checkboxes, each of which must have a value attribute.
 #15: Inside the form element, I am presented with a textarea at the end for additional comments.
+
 #16: Inside the form element, I am presented with a button with id="submit" to submit all my inputs. -->
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>FCC Survey Form</title>
     <link rel="stylesheet" href='styles.css'>
 </head>
+
 <body>
-        <div id="main">
-            <h1 id="title">FreeCodeCamp Survey Form</h1>
-            <div id="box">
-                <p id="description">Description</p>
-                <form id="survey-form">
-                    <div class="name-form">
-                        <label for="name">Name</label>
-                        <input type="text" name="name" placeholder="Name" id="name" required>
+    <div id="main">
+        <h1 id="title">FreeCodeCamp Survey Form</h1>
+        <div id="box">
+            <p id="description">Description</p>
+            <form id="survey-form">
+                <div class="name-form">
+                    <label for="name" id="name-label">Name</label>
+                    <input type="text" name="name" placeholder="Name" id="name" required>
+                </div>
+
+                <div class="email-form">
+                    <label for="email" id="email-label">Email</label>
+                    <input type="email" name="email" placeholder="Email" id="email" required>
+                </div>
+
+                <div class="number-form">
+                    <label for="number" id="email-label">Phone Number</label>
+                    <input type="number" name="number" placeholder="Phone Number" id="number" pattern="\d*" min="0"
+                        max="9999999999" required>
+                </div>
+
+                <div class="dropdown-form">
+                    <label for="dropdown" id="dropdown-label">Choose</label>
+                    <select name="dropdown" id="dropdown" required>
+                        <option value="First" selected>First</option>
+                        <option value="Second">Second</option>
+                        <option value="Third">Third</option>
+                    </select>
+                </div>
+
+                <div class="radio-form">
+                    <label for="radio-select">Select your favourite hiking path</label>
+                    <div class="radio-select">
+                        <label for="option1">
+                            <input type="radio" name="radio-options" id="option1">Option1
+                        </label>
+                        <label for="option2">
+                            <input type="radio" name="radio-options" id="option2">Option2
+                        </label>
+                        <label for="option3">
+                            <input type="radio" name="radio-options" id="option3">Option3
+                        </label>
                     </div>
-                    
-                    <div class="email-form">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" placeholder="Email" id="email" required>
+                </div>
+
+                <div class="checkbox-form">
+                    <label for="checkbox-select">Select your favourite activity</label>
+                    <div class="checkbox-select">
+                        <label for="option1">
+                            <input type="checkbox" name="checkbox-options" id="option1">Option1
+                        </label>
+                        <label for="option2">
+                            <input type="checkbox" name="checkbox-options" id="option2">Option2
+                        </label>
+                        <label for="option3">
+                            <input type="checkbox" name="checkbox-options" id="option3">Option3
+                        </label>
                     </div>
-
-                    <div class="number-form">
-                        <label for="number">Phone Number</label>
-                        <input type="number" name="number" placeholder="Phone Number" id="number" pattern="\d*" required>
-                    </div>
-                    
-        
+                </div>
 
 
 
 
 
 
+                <button type="submit">Submit</button>
 
-
-                </form>
-
-
-
+            </form>
 
 
 
-            </div>
+
+
+
         </div>
+    </div>
 </body>
+
 </html>

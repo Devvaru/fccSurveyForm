@@ -20,6 +20,7 @@ body {
 #description {
     text-align: center;
     color: #fff;
+    margin-top: 5%;
 }
 
 #box {
@@ -38,12 +39,14 @@ body {
 #survey-form {
     display: flex;
     flex-flow: column;
-    row-gap: 10px;
+    row-gap: 15px;
+    margin-bottom: 5%;
 }
 
-.name-form, .email-form, .number-form {
-    display:flex;
+.name-form, .email-form, .number-form, .dropdown-form, .radio-form, .radio-select, .checkbox-form, .checkbox-select {
+    display: flex;
     flex-flow: column;
     text-align: left;
     color: #fff;
+    row-gap: 5px;
 }
