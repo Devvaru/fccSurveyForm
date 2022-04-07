@@ -43,7 +43,7 @@ body {
     margin-bottom: 5%;
 }
 
-.name-form, .email-form, .number-form, .dropdown-form, .radio-form, .radio-select, .checkbox-form, .checkbox-select {
+.name-form, .email-form, .number-form, .dropdown-form, .radio-form, .radio-select, .checkbox-form, .checkbox-select, .comment-form {
     display: flex;
     flex-flow: column;
     text-align: left;
