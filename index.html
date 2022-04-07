@@ -30,7 +30,7 @@
     <div id="main">
         <h1 id="title">FreeCodeCamp Survey Form</h1>
         <div id="box">
-            <p id="description">Description</p>
+            <p id="description">Join us for a camping trip! <br>Please fill in your contact info and camping preferences.</p>
             <form id="survey-form">
                 <div class="name-form">
                     <label for="name" id="name-label">Name</label>
@@ -49,47 +49,48 @@
                 </div>
 
                 <div class="dropdown-form">
-                    <label for="dropdown" id="dropdown-label">Choose</label>
-                    <select name="dropdown" id="dropdown" required>
-                        <option value="First" selected>First</option>
-                        <option value="Second">Second</option>
-                        <option value="Third">Third</option>
+                    <label for="dropdown" id="dropdown-label">What's the best time to go hiking?</label>
+                    <select name="dropdown" id="dropdown">
+                        <option value="Morning" selected>Morning</option>
+                        <option value="Midday">Midday</option>
+                        <option value="Evening">Evening</option>
+                        <option value="Nighttime">Nighttime</option>
                     </select>
-                </div>
-
-                <div class="radio-form">
-                    <label for="radio-select">Select your favourite hiking path</label>
-                    <div class="radio-select">
-                        <label for="option1">
-                            <input type="radio" name="radio-options" id="option1" value="option1">Option1
-                        </label>
-                        <label for="option2">
-                            <input type="radio" name="radio-options" id="option2" value="option2">Option2
-                        </label>
-                        <label for="option3">
-                            <input type="radio" name="radio-options" id="option3" value="option3">Option3
-                        </label>
-                    </div>
                 </div>
 
                 <div class="checkbox-form">
                     <label for="checkbox-select">Select your favourite activity</label>
                     <div class="checkbox-select">
                         <label for="option1">
-                            <input type="checkbox" name="checkbox-options" id="option1" value="option1">Option1
+                            <input type="checkbox" name="checkbox-options" id="hiking" value="hiking">Hiking
                         </label>
                         <label for="option2">
-                            <input type="checkbox" name="checkbox-options" id="option2" value="option2">Option2
+                            <input type="checkbox" name="checkbox-options" id="cycling" value="cycling">Cycling
                         </label>
                         <label for="option3">
-                            <input type="checkbox" name="checkbox-options" id="option3" value="option3">Option3
+                            <input type="checkbox" name="checkbox-options" id="sunbathing" value="sunbathing">Sunbathing
+                        </label>
+                    </div>
+                </div>
+
+                <div class="radio-form">
+                    <label for="radio-select">Select your favourite type of hiking path</label>
+                    <div class="radio-select">
+                        <label for="option1">
+                            <input type="radio" name="radio-options" id="straight" value="straight">Straight path
+                        </label>
+                        <label for="option2">
+                            <input type="radio" name="radio-options" id="curved" value="curved">Curved path
+                        </label>
+                        <label for="option3">
+                            <input type="radio" name="radio-options" id="hilly" value="hilly">Hilly path
                         </label>
                     </div>
                 </div>
 
                 <div class="comment-form">
                     <label for="comment" id="comment-label">Additional comments?</label>
-                    <textarea rows="5" name="comment" placeholder="Email" id="comment">Add any additional comments</textarea>
+                    <textarea rows="5" name="comment" placeholder="Add any additional comments" id="comment"></textarea>
                 </div>
 
                 <button type="submit" id="submit">Submit</button>
