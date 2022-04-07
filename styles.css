@@ -1,0 +1,33 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: url(images/BG1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0px;
+}
+
+#main {
+    z-index: 1;
+    justify-content: center;
+}
+
+#title {
+    color: #1F4138;
+    text-align: center;
+    margin: 5% 5% 2% 5%;
+}
+
+#description {
+    text-align: center;
+}
+
+#box {
+    background: linear-gradient(180deg, rgba(8, 16, 29, 0.68) 0%, rgba(8, 16, 29, 0) 147.84%);
+    backdrop-filter: blur(5px);
+    max-width: 40%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
