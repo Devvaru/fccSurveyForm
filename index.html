@@ -4,6 +4,7 @@
 #4: Inside form element - required to enter my name in a field with id="name".
 #5: Inside form element - required to enter an email in a field with id="email".
 #6: If I enter an email that is not formatted correctly, I will see an HTML5 validation error.
+
 #7: Inside the form, I can enter a number in a field with id="number".
 #8: If I enter non-numbers in the number input, I will see an HTML5 validation error.
 #9: If I enter numbers outside the range of the number input, which are defined by the min and max attributes, I will see an HTML5 validation error.
@@ -28,6 +29,22 @@
             <div id="box">
                 <p id="description">Description</p>
                 <form id="survey-form">
+                    <div class="name-form">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" placeholder="Name" id="name" required>
+                    </div>
+                    
+                    <div class="email-form">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" placeholder="Email" id="email" required>
+                    </div>
+
+                    <div class="number-form">
+                        <label for="number">Phone Number</label>
+                        <input type="number" name="number" placeholder="Phone Number" id="number" pattern="\d*" required>
+                    </div>
+                    
+        
 
 
 
